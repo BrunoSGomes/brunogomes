@@ -1,28 +1,32 @@
+a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: inherit;
+}
+
 body {
-    background-color: #2f2933;
-    background-image: linear-gradient(225deg, #000000, #8800ff, #000000);
+    background-color: black;
 }
 
 .card {
-    width: 1000px;
-    height: 1300px;
+    width: 50vw;
+    height: 80vh;
     margin: 0 auto;
     background-color: #011522;
     border-radius: 8px;
     z-index: 1;
 }
 
-.tools {
+.card-tools {
     display: flex;
     align-items: center;
     padding: 9px;
 }
 
-.circle {
+.card-circle {
     padding: 0 4px;
 }
 
-.box {
+.card-box {
     display: inline-block;
     align-items: center;
     width: 10px;
@@ -31,26 +35,36 @@ body {
     border-radius: 50%;
 }
 
-.red {
+.card-red {
     background-color: #ff605c;
 }
 
-.yellow {
+.card-yellow {
     background-color: #ffbd44;
 }
 
-.green {
+.card-green {
     background-color: #00ca4e;
+}
+
+.profile {
+    display: flex;
+    flex-direction: row;
+}
+
+.video-present {
+    height: 30vh;
+    width: 15vw;
 }
 
 .button-link {
     margin-left: 15px;
     position: relative;
-    padding: 1em 1.8em;
+    padding: 0.8em 1.8em;
     outline: none;
     border: 1px solid #303030;
     background: #212121;
-    color: #ae00ff;
+    color: #00ca4e;
     text-transform: uppercase;
     letter-spacing: 2px;
     font-size: 15px;
@@ -62,7 +76,7 @@ body {
 }
 
 .button-link:hover {
-    box-shadow: 0 0 10px #ae00ff, 0 0 25px #001eff, 0 0 50px #ae00ff;
+    box-shadow: 0 0 10px #00ca4e, 0 0 25px #001eff, 0 0 50px #00ca4e;
     transition-delay: 0.6s;
 }
 
@@ -75,7 +89,7 @@ body {
     left: -100%;
     width: 100%;
     height: 2px;
-    background: linear-gradient(90deg, transparent, #ae00ff);
+    background: linear-gradient(90deg, transparent, #00ca4e);
 }
 
 .button-link:hover span:nth-child(1) {
@@ -102,7 +116,7 @@ body {
     right: 0;
     width: 2px;
     height: 100%;
-    background: linear-gradient(180deg, transparent, #ae00ff);
+    background: linear-gradient(180deg, transparent, #00ca4e);
 }
 
 .button-link:hover span:nth-child(2) {
@@ -126,10 +140,10 @@ body {
 }
 
 .button-link:active {
-    background: #ae00af;
-    background: linear-gradient(to top right, #ae00af, #001eff);
+    background: #00ca4e;
+    background: linear-gradient(to top right, #00ca4e, #001eff);
     color: #bfbfbf;
-    box-shadow: 0 0 8px #ae00ff, 0 0 8px #001eff, 0 0 8px #ae00ff;
+    box-shadow: 0 0 8px #00ca4e, 0 0 8px #001eff, 0 0 8px #00ca4e;
     transition: 0.1s;
 }
 
