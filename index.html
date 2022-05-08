@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="assets/icon/favicon.ico">
     <link rel="stylesheet" href="styles.css">
     <title>Bruno Gomes</title>
 </head>
@@ -30,55 +31,51 @@
             <div class="profile">
 
                 <div>
-                    <video class="video-present" autoplay loop>
-                        <source src="video/video.mov">
-                    </video>
 
                     <div>
-                        aaaaaaaaaaaaaaa
+                        <video id="video" class="video-present" loop="true" autoplay="autoplay" muted>
+                            <source src="assets/video/video.mov">
+                        </video>
+                    </div>
+
+                    <div class="profile-text">
+                        <label>> Bruno Gomes</label> <br>
+                        <label data-info="years"></label> <br>
+                        <label>> Backend Developer</label> <br>
+                        <label>> In love with <img class="js-icon" src="assets/svg/js.svg"></label>
                     </div>
 
                 </div>
 
-                <div>
-                    aaaaaaaaaaaaaaaaaaaa
+                <div class="information-text">
+                    <span>></span>
+                    <p>
+                        Fui até a dona maria comprar pão, mas chegando lá eu vi que a dona maria não vendia mais pão,
+                        então tiver que procurar outro mercado para conseguir comprar meu pão.
+                    </p>
                 </div>
 
             </div>
 
-            <div>
+            <div class="links">
 
-                <a href="https://www.linkedin.com/in/bruno-gomes-1927bb1b4/" target="_blank">
-                    <button href="https://www.linkedin.com/in/bruno-gomes-1927bb1b4/" target="_blank"
-                        class="button-link">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
+                <button class="button-link">
+                    <a href="https://www.linkedin.com/in/bruno-gomes-1927bb1b4/" target="_blank">
                         Linkedin
-                    </button>
-                </a>
+                    </a>
+                </button>
 
-
-                <a href="https://github.com/BrunoSGomes" target="_blank">
-                    <button class="button-link">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
+                <button class="button-link">
+                    <a href="https://github.com/BrunoSGomes" target="_blank">
                         GitHub
-                    </button>
-                </a>
+                    </a>
+                </button>
 
-                <a href="mailto:brunogomes.dev@yahoo.com?subject='E-mail de contato'" target="_blank">
-                    <button class="button-link">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
+                <button class="button-link">
+                    <a href="mailto:brunogomes.dev@yahoo.com?subject='E-mail de contato'" target="_blank">
                         E-mail
-                    </button>
-                </a>
+                    </a>
+                </button>
 
             </div>
 
@@ -88,6 +85,6 @@
 
 </body>
 
-<script src="script.js"></script>
+<script type="module" src="script.js"></script>
 
 </html>

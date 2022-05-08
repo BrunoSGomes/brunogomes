@@ -1,19 +1,36 @@
-a, a:hover, a:focus, a:active {
+:root {
+    --typingSpeed: 2s;
+    --textColor: #00ca4e;
+    --textCharacters: 35;
+}
+
+a,
+a:hover,
+a:focus,
+a:active {
     text-decoration: none;
     color: inherit;
 }
 
 body {
-    background-color: black;
+    background-color: #1a1a1a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .card {
     width: 50vw;
     height: 80vh;
-    margin: 0 auto;
     background-color: #011522;
     border-radius: 8px;
-    z-index: 1;
+    min-width: 500px;
+    max-width: 1080px;
+}
+
+.card-content {
+    margin: 15px 0 15px 15px;
+    height: 100%;
 }
 
 .card-tools {
@@ -53,101 +70,74 @@ body {
 }
 
 .video-present {
-    height: 30vh;
-    width: 15vw;
+    height: 220px;
+    width: 220px;
+    border-radius: 50%;
+    object-fit: cover;
 }
 
-.button-link {
-    margin-left: 15px;
-    position: relative;
-    padding: 0.8em 1.8em;
-    outline: none;
-    border: 1px solid #303030;
-    background: #212121;
-    color: #00ca4e;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-size: 15px;
-    overflow: hidden;
-    transition: 0.2s;
-    border-radius: 20px;
-    cursor: pointer;
+.profile-text {
+    color: var(--textColor);
+    font-size: 18px;
     font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
 }
 
-.button-link:hover {
-    box-shadow: 0 0 10px #00ca4e, 0 0 25px #001eff, 0 0 50px #00ca4e;
-    transition-delay: 0.6s;
+.information-text {
+    font-family: 'Courier New', Courier, monospace;
+    margin-left: 35px;
+    margin-right: 35px;
+    color: var(--textColor);
+    font-size: 18px;
+    font-weight: bold;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: row;
 }
 
-.button-link span {
+.information-text::before,
+.information-text::after {
+    content: '';
     position: absolute;
-}
-
-.button-link span:nth-child(1) {
     top: 0;
-    left: -100%;
-    width: 100%;
-    height: 2px;
-    background: linear-gradient(90deg, transparent, #00ca4e);
-}
-
-.button-link:hover span:nth-child(1) {
-    left: 100%;
-    transition: 0.7s;
-}
-
-.button-link span:nth-child(3) {
-    bottom: 0;
-    right: -100%;
-    width: 100%;
-    height: 2px;
-    background: linear-gradient(90deg, transparent, #001eff);
-}
-
-.button-link:hover span:nth-child(3) {
-    right: 100%;
-    transition: 0.7s;
-    transition-delay: 0.35s;
-}
-
-.button-link span:nth-child(2) {
-    top: -100%;
     right: 0;
-    width: 2px;
-    height: 100%;
-    background: linear-gradient(180deg, transparent, #00ca4e);
-}
-
-.button-link:hover span:nth-child(2) {
-    top: 100%;
-    transition: 0.7s;
-    transition-delay: 0.17s;
-}
-
-.button-link span:nth-child(4) {
-    bottom: -100%;
+    bottom: 0;
     left: 0;
-    width: 2px;
-    height: 100%;
-    background: linear-gradient(360deg, transparent, #001eff);
 }
 
-.button-link:hover span:nth-child(4) {
-    bottom: 100%;
-    transition: 0.7s;
-    transition-delay: 0.52s;
+.information-text::before {
+    background: #011522;
+    animation: typing var(--typingSpeed) steps(var(--textCharacters)) 2s forwards;
 }
 
-.button-link:active {
-    background: #00ca4e;
-    background: linear-gradient(to top right, #00ca4e, #001eff);
-    color: #bfbfbf;
-    box-shadow: 0 0 8px #00ca4e, 0 0 8px #001eff, 0 0 8px #00ca4e;
-    transition: 0.1s;
+.information-text::after {
+    width: 0.125em;
+    background: var(--textColor);
+    animation:
+        typing var(--typingSpeed) steps(var(--textCharacters)) 2s forwards,
+        blink 600ms steps(var(--textCharacters)) infinite;
 }
 
-.button-link:active span:nth-child(1) span:nth-child(2) span:nth-child(2) span:nth-child(2) {
-    transition: none;
-    transition-delay: none;
+@keyframes typing {
+    to {
+        left: 100%;
+    }
+}
+
+@keyframes blink {
+    to {
+        background: transparent;
+    }
+}
+
+.js-icon {
+    height: 15px;
+    width: 15px;
+    background-color: yellow;
+}
+
+.links {
+    display: flex;
+    align-self: flex-end;
 }
