@@ -83,6 +83,12 @@ body {
     font-family: 'Courier New', Courier, monospace;
 }
 
+.js-icon {
+    height: 15px;
+    width: 15px;
+    background-color: yellow;
+}
+
 .information-text {
     font-family: 'Courier New', Courier, monospace;
     margin-left: 35px;
@@ -131,10 +137,8 @@ body {
     }
 }
 
-.js-icon {
-    height: 15px;
-    width: 15px;
-    background-color: yellow;
+.stack {
+    color: white;
 }
 
 .links {
