@@ -4,19 +4,35 @@
     --textCharacters: 35;
 }
 
+* {
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    color: var(--textColor);
+    text-decoration: none;
+}
+
 a,
 a:hover,
 a:focus,
 a:active {
     text-decoration: none;
     color: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
 }
 
 body {
     background-color: #1a1a1a;
     display: flex;
     justify-content: center;
-    align-items: center;
 }
 
 .card {
@@ -24,13 +40,10 @@ body {
     height: 80vh;
     background-color: #011522;
     border-radius: 8px;
-    min-width: 500px;
+    min-height: 700px;
+    max-height: 700px;
+    min-width: 900px;
     max-width: 1080px;
-}
-
-.card-content {
-    margin: 15px 0 15px 15px;
-    height: 100%;
 }
 
 .card-tools {
@@ -64,6 +77,10 @@ body {
     background-color: #00ca4e;
 }
 
+.card-content {
+    margin: 15px;
+}
+
 .profile {
     display: flex;
     flex-direction: row;
@@ -77,25 +94,28 @@ body {
 }
 
 .profile-text {
-    color: var(--textColor);
-    font-size: 18px;
-    font-weight: bold;
-    font-family: 'Courier New', Courier, monospace;
+    margin-top: 15px;
+    margin-left: 30px;
+    font-size: 17px;
 }
 
-.js-icon {
-    height: 15px;
-    width: 15px;
-    background-color: yellow;
+.more-content div.background-text,
+.more-content div.stack {
+    margin-left: 35px;
+    margin-right: 25px;
+}
+
+.background-text {
+    border-radius: 10px;
+    background-color: #010c14;
+    min-height: 300px;
+    max-height: 500px;
 }
 
 .information-text {
-    font-family: 'Courier New', Courier, monospace;
-    margin-left: 35px;
-    margin-right: 35px;
-    color: var(--textColor);
-    font-size: 18px;
-    font-weight: bold;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 17px;
     overflow: hidden;
     position: relative;
     display: flex;
@@ -113,7 +133,7 @@ body {
 }
 
 .information-text::before {
-    background: #011522;
+    background: #010c14;
     animation: typing var(--typingSpeed) steps(var(--textCharacters)) 2s forwards;
 }
 
@@ -138,10 +158,38 @@ body {
 }
 
 .stack {
-    color: white;
+    margin-top: 50px;
+    font-size: 26px;
+}
+
+.stack ul {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 10px 20px 10px 20px;
+    border-radius: 10px;
+    background-color: #010c14;
+    justify-content: center;
+}
+
+.stack ul img {
+    height: 50px;
+    width: 50px;
+    padding-inline: 14px;
 }
 
 .links {
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+.links a {
     display: flex;
-    align-self: flex-end;
+    flex-direction: row;
+    padding: 8px 8px 0px 0px;
+    font-size: 20px;
+}
+
+.links a:hover {
+    background-color: #004d1d;
 }
