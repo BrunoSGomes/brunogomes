@@ -37,11 +37,11 @@ body {
 
 .card {
     width: 50vw;
-    height: 80vh;
+    height: 550px;
     background-color: #011522;
     border-radius: 8px;
-    min-height: 700px;
-    max-height: 700px;
+    min-height: 550px;
+    max-height: 550px;
     min-width: 900px;
     max-width: 1080px;
 }
