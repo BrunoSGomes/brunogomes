@@ -30,7 +30,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: calc(100vh - 56px);
+    height: 100vh;
 }
 
 /* Card */
@@ -122,7 +122,7 @@ body {
 }
 
 .information-text {
-    height: 200px;
+    height: 260px;
     padding: 20px;
     border-radius: var(--cardBorderRadius);
     background-color: #010c14;
@@ -171,13 +171,11 @@ body {
     padding: 10px 20px 10px 20px;
     border-radius: var(--cardBorderRadius);
     background-color: #010c14;
-    justify-content: center;
-    height: 40px;
+    justify-content: space-between;
 }
 
 .stack div img {
-    width: 4vw;
-    padding-inline: 3px;
+    width: 40px;
 }
 
 .stack .invert-svg {
