@@ -9,9 +9,14 @@
 }
 
 * {
+    margin: 0;
+    padding: 0;
     font-weight: bold;
     font-family: 'Courier New', Courier, monospace;
     color: var(--textColor);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     text-decoration: none;
     margin: 0;
     padding: 0;
@@ -19,6 +24,8 @@
 }
 
 body {
+    height: 100vh;
+    width: 100vw;
     background-color: #1a1a1a;
     display: flex;
     align-items: center;
@@ -135,7 +142,7 @@ body {
 
 .information-text p::before {
     background: #010c14;
-    animation: typing var(--typingSpeed) steps(var(--textCharacters)) 2s forwards;
+    animation: typing var(--typingSpeed) steps(var(--textCharacters)) forwards;
 }
 
 .information-text p::after {
