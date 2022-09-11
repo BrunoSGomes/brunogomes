@@ -16,7 +16,6 @@
     margin: 0;
     padding: 0;
     list-style-type: none;
-
 }
 
 body {
@@ -30,7 +29,8 @@ body {
 /* Card */
 
 .card {
-    width: 50vw;
+    max-width: 50vw;
+    min-width: 600px;
     background-color: #011522;
     border-radius: var(--cardBorderRadius);
 }
@@ -87,7 +87,7 @@ body {
 }
 
 .profile-text {
-    margin: 11px;
+    margin-top: 10px;
     font-size: 17px;
 }
 
@@ -106,10 +106,17 @@ body {
 }
 
 .more-content {
-    width: 35vw;
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 35vw;
+    min-width: 270px;
 }
 
 .information-text {
+    height: 200px;
+    padding: 20px;
     border-radius: var(--cardBorderRadius);
     background-color: #010c14;
     font-size: 17px;
@@ -151,11 +158,8 @@ body {
     }
 }
 
-.stack {
-    margin-top: 50px;
-}
-
 .stack div {
+    min-width: 400px;
     display: flex;
     padding: 10px 20px 10px 20px;
     border-radius: var(--cardBorderRadius);
@@ -165,7 +169,7 @@ body {
 }
 
 .stack div img {
-    width: 30vw;
+    width: 4vw;
     padding-inline: 3px;
 }
 
@@ -175,8 +179,15 @@ body {
 }
 
 @media (max-width: 700px) {
+    body {
+        margin: 30px 0px 30px 0px;
+        height: 100%;
+    }
+
     .card {
         width: 80vw;
+        max-width: 80vw;
+        min-width: 80vw;
         height: 1000px;
     }
 
@@ -195,6 +206,7 @@ body {
     }
 
     .more-content {
-        margin-top: 50px;
+        margin: 0;
+        margin-top: 30px;
     }
 }
