@@ -1,136 +1,154 @@
 :root {
-    /* Text color */
-    --textColor: #00ca4e;
+	/* Text color */
+	--textColor: #00ca4e;
+	--cardBackgroundColor: #011522;
+	--informationBackgroundColor: #010c14;
 
-    /* Text info */
-    --typingSpeed: 2s;
-    --textCharacters: 35;
-    --cardBorderRadius: 8px;
+	/* Text info */
+	--typingSpeed: 2s;
+	--textCharacters: 35;
+	--cardBorderRadius: 8px;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    font-weight: bold;
-    font-family: 'Courier New', Courier, monospace;
-    color: var(--textColor);
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
+	font-weight: bold;
+	font-family: 'Courier New', Courier, monospace;
+	color: var(--textColor);
+	box-sizing: border-box;
+	text-decoration: none;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
 }
 
 body {
-    height: 100vh;
-    width: 100vw;
-    background-color: #1a1a1a;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
+	height: 100vh;
+	width: 100vw;
+	background-color: #1a1a1a;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
 }
 
 /* Card */
 
 .card {
-    max-width: 50vw;
-    min-width: 600px;
-    background-color: #011522;
-    border-radius: var(--cardBorderRadius);
+	max-width: 50vw;
+	min-width: 600px;
+	background-color: var(--cardBackgroundColor);
+	border-radius: var(--cardBorderRadius);
 }
 
 /* Card buttons */
 
 .card-tools {
-    display: flex;
-    align-items: center;
-    padding: 9px;
+	display: flex;
+	align-items: center;
+	padding: 9px;
 }
 
 .card-circle {
-    padding: 0 4px;
+	padding: 0 4px;
 }
 
 .card-box {
-    display: inline-block;
-    align-items: center;
-    width: 10px;
-    height: 10px;
-    padding: 1px;
-    border-radius: 50%;
+	display: inline-block;
+	align-items: center;
+	width: 10px;
+	height: 10px;
+	padding: 1px;
+	border-radius: 50%;
 }
 
 .card-red {
-    background-color: #ff605c;
+	background-color: #ff605c;
 }
 
 .card-yellow {
-    background-color: #ffbd44;
+	background-color: #ffbd44;
 }
 
 .card-green {
-    background-color: #00ca4e;
+	background-color: #00ca4e;
 }
 
 /* Card content */
 
 .card-content {
-    margin: 30px;
+	margin: 30px;
 }
 
 .content {
-    display: flex;
-    flex-direction: row;
+	display: flex;
+	flex-direction: row;
 }
 
 .video-present {
-    height: 220px;
-    width: 220px;
-    border-radius: 50%;
-    object-fit: cover;
+	height: 220px;
+	width: 220px;
+	border-radius: 50%;
+	object-fit: cover;
 }
 
 .profile-text {
-    margin-top: 10px;
-    font-size: 17px;
+	margin-top: 10px;
+	font-size: 17px;
 }
 
 .links {
-    margin-top: 20px;
+	margin-top: 20px;
 }
 
 .links a {
-    display: flex;
-    flex-direction: row;
-    padding: 8px 8px 0px 0px;
+	display: flex;
+	flex-direction: row;
+	padding: 8px 8px 0px 0px;
 }
 
 .links a:hover {
-    background-color: #004d1d;
+	background-color: #004d1d;
 }
 
 .more-content {
-    margin-left: 30px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    max-width: 35vw;
-    min-width: 270px;
+	margin-left: 30px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	max-width: 35vw;
+	min-width: 270px;
+}
+
+.information-title {
+	margin-bottom: 10px;
 }
 
 .information-text {
-    height: 260px;
-    padding: 20px;
-    border-radius: var(--cardBorderRadius);
-    background-color: #010c14;
-    font-size: 17px;
-    position: relative;
+	display: block;
+	overflow-y: scroll;
+	height: 260px;
+	padding: 20px;
+	border-radius: var(--cardBorderRadius);
+	background-color: var(--informationBackgroundColor);
+	font-size: 17px;
+	position: relative;
+	line-height: 18px;
 }
 
-.information-text p::before,
+.information-text p {
+	margin-bottom: 8px;
+}
+
+.information-text::-webkit-scrollbar {
+	width: 5px;
+}
+
+.information-text::-webkit-scrollbar-thumb {
+	background: rgb(26, 26, 26);
+	border-radius: var(--cardBorderRadius);
+}
+
+/* .information-text p::before,
 .information-text p::after {
     content: '';
     position: absolute;
@@ -151,67 +169,75 @@ body {
     animation:
         typing var(--typingSpeed) steps(var(--textCharacters)) 2s alternate,
         blink 600ms steps(var(--textCharacters)) infinite;
-}
+} */
 
-@keyframes typing {
-    to {
-        left: 100%;
-    }
+/* @keyframes typing {
+	to {
+		left: 100%;
+	}
 }
 
 @keyframes blink {
-    to {
-        background: transparent;
-    }
+	to {
+		background: transparent;
+	}
+} */
+
+.stack-title {
+	margin-top: 20px;
+	margin-bottom: 10px;
 }
 
-.stack div {
-    min-width: 400px;
-    display: flex;
-    padding: 10px 20px 10px 20px;
-    border-radius: var(--cardBorderRadius);
-    background-color: #010c14;
-    justify-content: space-between;
+.stack {
+	float: left;
+	height: auto;
+	width: 100%;
+	padding: 10px 20px 10px 20px;
+	border-radius: var(--cardBorderRadius);
+	background-color: var(--informationBackgroundColor);
+	text-align-last: justify;
+	text-align: justify;
+	font-size: xx-large;
 }
 
-.stack div img {
-    width: 40px;
+.stack img {
+	width: 40px;
 }
 
 .stack .invert-svg {
-    -webkit-filter: invert(100%);
-    filter: invert(100%);
+	-webkit-filter: invert(100%);
+	filter: invert(100%);
 }
 
-@media (max-width: 700px) {
-    body {
-        margin: 30px 0px 30px 0px;
-        height: 100%;
-    }
+@media (max-width: 795px) {
+	body {
+		margin: 30px 0px 30px 0px;
+		height: 100%;
+	}
 
-    .card {
-        width: 80vw;
-        max-width: 80vw;
-        min-width: 80vw;
-        height: 1000px;
-    }
+	.card {
+		width: 80vw;
+		max-width: 80vw;
+		min-width: 80vw;
+		height: 1000px;
+	}
 
-    .profile {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+	.profile {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
 
-    .profile-text {
-        font-size: 20px;
-    }
+	.profile-text {
+		font-size: 20px;
+	}
 
-    .content {
-        flex-direction: column;
-    }
+	.content {
+		flex-direction: column;
+	}
 
-    .more-content {
-        margin: 0;
-        margin-top: 30px;
-    }
+	.more-content {
+		margin: 0;
+		margin-top: 30px;
+	}
 }

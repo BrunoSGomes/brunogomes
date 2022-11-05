@@ -1,93 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="icon" type="image/x-icon" href="assets/icon/favicon.ico" />
+		<link rel="stylesheet" href="styles.css" />
+		<title>Bruno Gomes</title>
+	</head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="assets/icon/favicon.ico">
-    <link rel="stylesheet" href="styles.css">
-    <title>Bruno Gomes</title>
-</head>
+	<body>
+		<div class="card">
+			<div class="card-tools">
+				<div class="card-circle">
+					<span class="card-red card-box"></span>
+				</div>
+				<div class="card-circle">
+					<span class="card-yellow card-box"></span>
+				</div>
+				<div class="card-circle">
+					<span class="card-green card-box"></span>
+				</div>
+			</div>
 
-<body>
+			<div class="card-content">
+				<div class="content">
+					<div class="profile">
+						<video
+							id="video"
+							class="video-present"
+							loop="true"
+							autoplay="autoplay"
+							muted
+						>
+							<source src="assets/video/video.mov" />
+						</video>
 
-    <div class="card">
+						<div class="profile-text">
+							<div>
+								<p>> Bruno Gomes</p>
+								<p data-info="years"></p>
+								<p>> Software Developer</p>
+								<p>> In love with programming :)</p>
+							</div>
 
-        <div class="card-tools">
-            <div class="card-circle">
-                <span class="card-red card-box"></span>
-            </div>
-            <div class="card-circle">
-                <span class="card-yellow card-box"></span>
-            </div>
-            <div class="card-circle">
-                <span class="card-green card-box"></span>
-            </div>
-        </div>
+							<div class="links">
+								<a
+									href="https://www.linkedin.com/in/bruno-gomes-1927bb1b4/"
+									target="_blank"
+								>
+									> Linkedin
+								</a>
+								<a href="https://github.com/BrunoSGomes" target="_blank">
+									> GitHub
+								</a>
+								<a
+									href="mailto:brunogomes.dev@yahoo.com?subject='E-mail de contato'"
+									target="_blank"
+								>
+									> E-mail
+								</a>
+							</div>
+						</div>
+					</div>
 
-        <div class="card-content">
+					<div class="more-content">
+						<section>
+							<h2 class="information-title">> Information</h2>
+							<div class="information-text">
+								<p>Hello World!</p>
+								<p>
+									I'm a fullstack software developer, currently my main stack is
+									based on javascript/typescript, on the frontend i use the
+									Angular framework and on the backend depending on the project
+									i use Express or NestJS.
+								</p>
+								<p>
+									I have experience with cloud services (AWS/GCP) and SQL/NoSQL
+									databases.
+								</p>
+								<p>
+									Access my github to see my projects, if you want to contact
+									me, send me a message on my linkedin or send me an email.
+								</p>
+							</div>
+						</section>
 
-            <div class="content">
+						<section>
+							<h2 class="stack-title">> Knowledge</h2>
+							<div class="stack">
+								<img
+									draggable="false"
+									src="./assets/svg/typescript-original.svg"
+									alt="TypeScript"
+								/>
+								<img
+									draggable="false"
+									src="./assets/svg/angular.svg"
+									alt="Angular"
+								/>
+								<img
+									draggable="false"
+									src="./assets/svg/nodejs-original.svg"
+									alt="Node.js"
+								/>
+								<img
+									class="invert-svg"
+									draggable="false"
+									src="./assets/svg/express-original.svg"
+									alt="Express"
+								/>
+								<img
+									draggable="false"
+									src="./assets/svg/nestjs-plain.svg"
+									alt="NestJS"
+								/>
 
-                <div class="profile">
-                    <video id="video" class="video-present" loop="true" autoplay="autoplay" muted>
-                        <source src="assets/video/video.mov">
-                    </video>
+								<img
+									draggable="false"
+									src="./assets/svg/docker-plain.svg"
+									alt="Docker"
+								/>
+								<img
+									draggable="false"
+									src="./assets/svg/jest-plain.svg"
+									alt="Jest"
+								/>
+								<img
+									draggable="false"
+									src="./assets/svg/mongodb-original.svg"
+									alt="MongoDB"
+								/>
+								<img
+									draggable="false"
+									src="./assets/svg/amazonwebservices-original.svg"
+									alt="AWS"
+								/>
+								<img
+									draggable="false"
+									src="./assets/svg/googlecloud-original.svg"
+									alt="GCP"
+								/>
+							</div>
+						</section>
+					</div>
+				</div>
+			</div>
+		</div>
 
-                    <div class="profile-text">
-                        <div>
-                            <p>> Bruno Gomes</p>
-                            <p data-info="years"></p>
-                            <p>> Software Developer</p>
-                            <p>> In love with programming :)</p>
-                        </div>
-
-                        <div class="links">
-                            <a href="https://www.linkedin.com/in/bruno-gomes-1927bb1b4/" target="_blank">
-                                > Linkedin
-                            </a>
-                            <a href="https://github.com/BrunoSGomes" target="_blank">
-                                > GitHub
-                            </a>
-                            <a href="mailto:brunogomes.dev@yahoo.com?subject='E-mail de contato'" target="_blank">
-                                > E-mail
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="more-content">
-                    <div>
-                        <p class="information-text">
-                            Fui até a dona maria comprar pão, mas chegando lá eu vi que a dona maria não vendia mais
-                            pão, então tiver que procurar outro mercado para conseguir comprar meu pão.
-                        </p>
-                    </div>
-
-                    <div class="stack">
-                        <h2>> Knowledge</h2>
-                        <div>
-                            <img draggable="false" src="./assets/svg/typescript-original.svg" alt="TypeScript">
-                            <img draggable="false" src="./assets/svg/angular.svg" alt="Angular">
-                            <img draggable="false" src="./assets/svg/nodejs-original.svg" alt="Node.js">
-                            <img class="invert-svg" draggable="false" src="./assets/svg/express-original.svg"
-                                alt="Express">
-                            <img draggable="false" src="./assets/svg/nestjs-plain.svg" alt="NestJS">
-                            <img draggable="false" src="./assets/svg/docker-plain.svg" alt="Docker">
-                            <img draggable="false" src="./assets/svg/jest-plain.svg" alt="Jest">
-                            <img draggable="false" src="./assets/svg/mongodb-original.svg" alt="MongoDB">
-                            <img draggable="false" src="./assets/svg/amazonwebservices-original.svg" alt="AWS">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </div>
-
-    <script src="script.js"></script>
-
-</body>
-
+		<script src="script.js"></script>
+	</body>
 </html>
