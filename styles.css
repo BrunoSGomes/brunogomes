@@ -219,7 +219,6 @@ body {
 		width: 80vw;
 		max-width: 80vw;
 		min-width: 80vw;
-		height: 1000px;
 	}
 
 	.profile {
@@ -237,7 +236,17 @@ body {
 	}
 
 	.more-content {
+		align-self: center;
 		margin: 0;
 		margin-top: 30px;
+	}
+
+	.stack {
+		line-height: 0;
+		font-size: 12px;
+	}
+
+	.stack img {
+		padding: 5px 0 5px 0;
 	}
 }
